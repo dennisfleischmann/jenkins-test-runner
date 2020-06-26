@@ -1,10 +1,7 @@
-pipeline {
-  agent any
-  stages {
-    stage ('Initialize') {
-      steps {
-        echo 'Placeholder.'
-      }
+@Library('piper-lib-os') _
+node() {
+    stage('prepare') {
+        checkout scm
+        setupCommonPipelineEnvironment script:this
     }
-  }
 }
