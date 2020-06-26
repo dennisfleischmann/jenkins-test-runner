@@ -1,4 +1,7 @@
 {
   "name": "my-awesome-package",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "scripts": {
+     "ci-build": "echo \"Starting BrowserSync\" && exit 1"
+  }
 }
